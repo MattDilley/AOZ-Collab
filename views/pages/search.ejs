@@ -1,0 +1,203 @@
+    <!-- Start home page -->
+
+    <div class="avlb-colabs-main">
+     <div class="amos-commen-bg">
+          <div class="container">
+     <div class="commen-header">
+                  <div class="left-button">
+                    <div class="commen-b-button">
+                       <a href="#"><span></span></a>
+                    </div>
+                    </div>
+                     <div class="commen-title">
+                       <h2 class="title">Available Colabs</h2>
+                     </div>
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-.png" alt=""></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-2.png" alt=""></a>
+                    </div>
+                    </div>
+                </div>
+              <div class="body-scroll-main">
+                <div class="inner-border">
+                  <div class="commen-body-scroll">
+                   <div class="ab-colabs-container">
+                    <div class="row colabs-top-row">
+                      <%
+                      for (var i in collabs) {
+                      %>
+                      <div class="col-md-4">
+                        <div class="inner-content">
+                          <div class="column-game">
+                            <figure>
+                              <img src="/images/collabs/<%-collabs[i].image%>" alt="">
+                            </figure>
+                             <div class="cus-img-heading">
+                              <h3 class="title" onclick="return selectCollab(<%- collabs[i].id %>);"><%- collabs[i].title %>
+                              <!-- <a href="#" onclick="return selectCollab(<%- collabs[i].id %>);"><%- collabs[i].title %></a> -->
+                              </h3>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <% } %>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="commen-bottom-button">
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-.png" alt=""> --><i class="fas fa-angle-left"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-signal"></i></a>
+                    </div>
+                    </div>
+                </div>
+
+<div id="colabs-bottom_main" class="colabs-bottom_main">
+ <div class="commen-header">
+                  <div class="left-button">
+                    <div class="commen-b-button">
+                       <a href="#"><span></span></a>
+                    </div>
+                    </div>
+                     <div class="commen-title">
+                       <h2 class="title">Create</h2>
+                     </div>
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-.png" alt=""></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-2.png" alt=""></a>
+                    </div>
+                    </div>
+                </div>
+         <div class="body-scroll-main colabs-bottom">
+                <div class="inner-border">
+                  <div class="commen-body-scroll">
+                   <div class="ab-colabs-container">
+                    <div class="row colabs-bottom-row">
+                      <div class="col-lg-5">
+                        <div class="column-game">
+                            <figure>
+                              <img id="main-collab-image" src="" alt="">
+                            </figure>
+                            <div class="cus-img-heading">
+                              <h3 id="main-collab-thumb-title" class="title"></h3>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class="column-game-content">
+                            <h2 id="main-collab-title" class="cus-title"></h2>
+                            <ul>
+                              <li>
+                                <p>Completion Status:</p><span id="main-collab-status">WIP</span>
+                              </li>
+                              <li>
+                                <p>Genre:</p><span id="main-collab-genre"></span>
+                              </li>
+                              <li>
+                                <p>Github/Git/Repo:</p><span><a id="main-collab-github" href="#" target="_new"></a></span>
+                              </li>
+                              <li>
+                                <p>Product Download:</p><span><a id="main-collab-download" href="#" target="_new"></a></span>
+                              </li>
+                              <li>
+                                <p>Product Website:</p><span><a id="main-collab-website" href="#" target="_new"></a></span>
+                              </li>
+                              <li>
+                                <p>Collab Admin:</p><span id="main-collab-admin"></span>
+                              </li>
+                              <li>
+                                <p>Seeking collaboration:</p><span id="main-collab-collabsequired"></span>
+                              </li>
+                            </ul>
+                            <div class="commen-button">
+                                              <a id="main-collaborateLink" href="/apply">Apply to Collaborate</a>
+                                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="dec-b">
+                          <div class="inner-group fdec">
+                              <label>Description</label>
+                              <span class="comment"><p><span id="main-collab-description"></span>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+         <div class="commen-bottom-button">
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-.png" alt=""> --><i class="fas fa-angle-left"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-signal"></i></a>
+                    </div>
+                    </div>
+                </div>
+      </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- End home page -->
+<script>
+$( document ).ready(function() {
+  $("#colabs-bottom_main").hide();
+  selectCollab(5);
+
+
+});
+
+  function selectCollab(collabId){
+
+    $.ajax({
+      method: "GET",
+      url: "/collaboration/"+collabId,
+      cache: false
+    })
+    .done(function( collab ) {
+      $("img#main-collab-image").attr('src','/images/collabs/'+collab.image);
+      $("#main-collab-thumb-title").text(collab.title);
+      $("#main-collab-status").text(collab.status);
+      $("#main-collab-title").text(collab.title);
+      $("img#main-collab-image").attr('src','/images/collabs/'+collab.image);
+      $("span#main-collab-genre").text(collab.genre);
+      $("a#main-collab-github").text(collab.githubLink);
+      $("a#main-collab-download").text(collab.downloadLink);
+      $("a#main-collab-website").text(collab.websiteLink);
+      $("a#main-collab-github").attr('href',collab.githubLink);
+      $("a#main-collab-download").attr('href',collab.downloadLink);
+      $("a#main-collab-website").attr('href',collab.websiteLink);
+      $("#main-collab-description").text(collab.description);
+      $("a#main-collaborateLink").attr('href','/apply/'+collab.id);
+      $("span#main-collab-admin").text(collab.admin.firstName + " " + collab.admin.lastName + "("+collab.adminType+")");
+      $("span#main-collab-collabsequired").text(collab.collaboratorsRequired);
+      $("#colabs-bottom_main").show();
+    })
+    .fail(function () {
+        $("#colabs-bottom_main").hide();
+    });
+
+  }
+
+</script>

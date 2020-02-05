@@ -1,0 +1,143 @@
+    <!-- Start home page -->
+
+    <div class="apply-col-main">
+     <div class="amos-commen-bg">
+          <div class="container">
+     <div class="commen-header">
+                  <div class="left-button">
+                    <div class="commen-b-button">
+                       <a href="#"><span></span></a>
+                    </div>
+                    </div>
+                     <div class="commen-title">
+                       <h2 class="title">Apply to Collaborate</h2>
+                     </div>
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-.png" alt=""></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><img src="/images/icon-button-2.png" alt=""></a>
+                    </div>
+                    </div>
+                </div>
+              <div class="body-scroll-main">
+                <div class="inner-border">
+                  <div class="commen-body-scroll">
+                   <div class="apply-col-container">
+                       <div class="row apply-col-row">
+                         <div class="col-lg-7">
+                           <div class="apply-col-left">
+                             <div class="apply-col-content">
+                               <h3 class="title"><%- collab.title %></h3>
+                               <p class="author">Author: <span><%- collab.admin.firstName %> <%- collab.admin.lastName %></span></p>
+                               <div class="dec">
+                                 <div class="dec-title">Description: <%- collab.description %></div>
+                                 <div class="column-game">
+                                    <figure>
+                                      <img src="/images/collabs/<%- collab.image %>" alt="">
+                                    </figure>
+                                     <div class="cus-img-heading">
+                                      <h3 class="title"><%- collab.title %></h3>
+                                  </div>
+                                </div>
+                                <p><%- collab.description %></p>
+                               </div>
+                             </div>
+                             <!--
+                             <div class="commen-button">
+                                <a href="#">Apply to Collaborate</a>
+                              </div>
+                              -->
+                           </div>
+                         </div>
+                         <div class="col-lg-5">
+                           <div class="apply-col-right">
+                             <h3 class="title">Apply to Collab</h3>
+                             <div class="inner-group ftitle">
+                                          <label>Collaborator’s Name</label>
+                                    <span class="f-name">
+                                    <input type="text" name=""  value="<%- user.firstName%> <%- user.lastName %>" class="f-title" aria-required="true" aria-invalid="false" placeholder="Name here">
+                                  </span>
+                                </div>
+                                 <div class="inner-group ftitle">
+                                    <label>Type of Collaboration</label>
+                                    <div class="new">
+
+                                        <div class="form-group">
+                                          <input type="checkbox" id="html">
+                                          <label for="html">GFX</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="css">
+                                          <label for="css">UI Design</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="javascript">
+                                          <label for="javascript">Coder-JS</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="coder-amos">
+                                          <label for="coder-amos">Coder-AMOS</label>
+                                        </div>
+
+                                    </div>
+                         </div>
+                                <div class="commen-button">
+                                  <a id="submit">Submit Collab Application</a>
+                              </div>
+                           </div>
+                         </div>
+                       </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="commen-bottom-button">
+                     <div class="right-button">
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-.png" alt=""> --><i class="fas fa-angle-left"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="commen-b-button">
+                       <a href="#"><!-- <img src="/images/icon-button-2.png" alt=""> --><i class="fas fa-signal"></i></a>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- End home page -->
+<script>
+$( document ).ready(function() {
+  $("#submit").click( function(){
+    applyCollab(<%-req.session.userId%>);
+  });
+});
+
+  function applyCollab(userId){
+    var request = $.ajax({
+      method: "PATCH",
+      url: "/collaboration/<%- collab.id %>",
+      data: {
+          <% // for (var i in owner_ids){ %>
+          owners: [userId,<%- owner_ids %>]
+          <% //} %>
+          //owners: userId
+      },
+      dataType: "json"
+    });
+
+    request.done(function( collab ) {
+      alert("added you to the collab!");
+    });
+
+    request.fail(function (jqXHR, textStatus) {
+          alert("collab update failed! " + textStatus);
+    });
+  }
+
+</script>

@@ -1,0 +1,262 @@
+@media screen and (max-width: 1199px){
+	
+	.create-c-p {
+        padding: 0 0 0;
+    }
+	.commen-title .title {
+	    margin-bottom: 0;
+	  
+	}
+	.create-c-p .c-cus-form .inner-group label {
+	    font-size: 18px;
+	    margin-bottom: 8px;
+	}
+	.create-c-p .c-cus-form .inner-group {
+	    margin-bottom: 30px;
+	}
+	.create-c-p .c-cus-form .type-genre ul.serviceul {
+	    max-height: 240px;
+	}
+	.create-c-p .c-cus-form .cus-scroll-bottom .type-genre ul.serviceul {
+	    max-height: 220px;
+	}
+
+
+
+
+
+
+    /*third*/
+
+.apply-col-main .apply-col-row .dec .column-game {
+    width: 100%;
+    padding-right: 0;
+ }
+ .apply-col-main .apply-col-row .dec p {
+    font-size: 16px;
+}
+
+}
+@media screen and (max-width: 991px){
+
+
+.header_main .logo {
+    font-size: 20px;
+}
+.header_main .search-bar {
+    width: 46%;
+}
+.header_main .login_ {
+    width: 22%;
+}
+
+.commen-title .title {
+    margin-bottom:0;
+}
+.create-c-p {
+        padding: 0 0 0;
+    }
+.create-c-p .c-cus-form .inner-group input, .create-c-p .c-cus-form .inner-group textarea {
+    font-size: 16px;
+    padding: 15px 20px;
+    height: 50px;
+}
+.create-c-p .c-cus-form .inner-group {
+    margin-bottom: 25px;
+}
+.create-c-p .c-cus-form .type-genre ul li a {
+    padding: 6px 20px;
+  
+}
+.create-c-p .c-cus-form .inner-group .cut-link-box .f-link {
+    width: calc(50% - 30px);
+    margin: 0 15px 20px;
+}
+
+
+
+
+
+
+.colabs-bottom-row {
+    margin: 0 0 20px;
+}
+.colabs-bottom-row .col-lg-5 {
+    margin-bottom: 10px;
+}
+.colabs-bottom-row .column-game-content .cus-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.avlb-colabs-main .dec-b label {
+    font-size: 17px;
+}
+.avlb-colabs-main .dec-b .textarea {
+    font-size: 13px;
+}
+.colabs-bottom-row .col-lg-5, .colabs-bottom-row .col-lg-7 {
+    padding: 0;
+}
+
+
+/*third*/
+
+
+.apply-col-main .col-lg-7 {
+    margin-bottom: 30px;
+}
+}
+
+
+
+@media screen and (max-width: 767px){
+.commen-button a {
+    font-size: 15px;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 21px;
+}
+.commen-title {
+    padding: 0 55px 0 27px;
+    text-align: center;
+}
+.commen-title .right-button a span {
+    width: 11px;
+    height: 11px;
+}
+.body-scroll-main {
+    padding: 5px;
+}
+.header_main .container {
+    justify-content: center;
+
+}
+.header_main .search-bar {
+    margin: 10px 0;
+    width: auto;
+}
+.header_main {
+     padding: 10px 0;
+}
+.header_main .logo {
+    font-size: 22px;
+}
+.header_main .login_ {
+    width: auto;
+}
+
+.body-scroll-main .inner-border {
+    padding: 10px;
+}
+
+
+.commen-title .title {
+    font-size: 10px;
+    margin-bottom: 0;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.create-c-p .c-cus-form .inner-group label {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.create-c-p .c-cus-form .inner-group input, .create-c-p .c-cus-form .inner-group textarea {
+    font-size: 15px;
+    padding: 14px 15px;
+    height: 47px;
+}
+.create-c-p .c-cus-form .inner-group .cut-link-box {
+    margin: 0;
+}
+.create-c-p .c-cus-form .inner-group .cut-link-box .f-link {
+    width: 100%;
+    margin: 0 0 15px;
+}
+.create-c-p .c-cus-form .type-genre ul li {
+    font-size: 15px;
+}
+.create-c-p .c-cus-form .cus-scroll-bottom {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+}
+.create-c-p .c-cus-form .type-genre .serviceul option {
+    padding: 6px 4px;
+    font-size: 15px;
+ 
+}
+.create-c-p .c-cus-form .cus-scroll-bottom .col-md-6 {
+    padding: 0;
+}
+
+
+.avlb-colabs-main .colabs-bottom_main, .avlb-colabs-main .colabs-bottom {
+    width: 100%;
+}
+.colabs-bottom-row .column-game-content .commen-button a {
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+
+/*third*/
+
+
+/*.apply-col-main .body-scroll-main {
+    padding: 0;
+}*/
+.apply-col-main .apply-col-left .apply-col-content {
+    padding: 15px 10px 15px;
+    margin-bottom: 30px;
+    max-height: 500px;
+}
+.apply-col-main .apply-col-row .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.apply-col-main .apply-col-row .author {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.apply-col-main .apply-col-row .dec p {
+    font-size: 14px;
+}
+.apply-col-main .apply-col-right {
+    padding: 15px 10px 15px;
+ 
+}
+.apply-col-main .apply-col-right input {
+    font-size: 15px;
+    padding: 14px 15px;
+    height: 44px;
+}
+.apply-col-main .apply-col-row .dec .column-game .title {
+    margin-bottom: 20px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 575px){
+.commen-button a {
+    font-size: 12px;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 10px;
+}
+.apply-col-row .col-lg-5 {
+    padding: 0 10px;
+}
+.apply-col-main .apply-col-right label {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.apply-col-main .apply-col-right .commen-button a {
+    font-size: 12px;
+    padding: 0 10px;
+}
